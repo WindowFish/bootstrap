@@ -1,0 +1,14 @@
+{
+    "easysass.formats": [
+        {
+            "format": "expanded",
+            "extension": ".css"
+        },
+        {
+            "format": "compressed",
+            "extension": ".min.css"
+        }
+    ],
+    "easysass.targetDir": "src/css"
+}
+// 对于每个项目都是要重新的在 file  prefence   setting workspace 右上边的图标 setting.json中加上这些话来指定scss文件保存后的自动生成的css和min.css文件路径

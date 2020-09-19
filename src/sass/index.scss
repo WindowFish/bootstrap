@@ -1,0 +1,411 @@
+// 头部
+header{
+    //  上部分
+    .head-bar{
+        text-align: center;
+        line-height: 50px;
+        height:50px;
+        border-bottom: 1px solid rgb(182, 166, 166);
+        .container{
+             .row{
+                  div+div{
+                      border-left: 1px solid rgb(182, 166, 166);
+                  } 
+                  div.head-bar-1{
+                       a{
+                           position: relative;
+                           img{
+                             position: absolute;
+                             top: 30px;
+                             left: -5px;
+                             z-index: 999;
+                             display: none;
+                           }
+                           &:hover>img{
+                                display:block;
+                           }
+
+                       }
+                  }
+
+
+             }          
+        }
+    }
+    // 下部分
+    .nav-bar{
+        background-color: #f8f9fa!important;
+         .container{
+               .navbar-brand{
+                   width: 180px;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                  img{
+                       width:160px;
+                       height: 70px;
+                  }
+               } 
+               ul{   
+                //    不要在这里随便设置高度改变其中的样式
+                li.active{
+                    border-bottom: 2px solid red;
+                    box-sizing: border-box;
+                }
+                 li{
+                    margin-left: 20px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                     &:hover{
+                            border-bottom: 2px solid red;
+                            box-sizing: border-box;
+                    }
+                }
+           }
+           .form-inline{
+                height: 50px;
+                font-size: 16px;
+                &:hover{
+                    border-bottom: 2px solid red;
+                    box-sizing: border-box;
+                }
+           
+         }
+    }}
+}
+// 轮播图
+section{
+     .carousel{
+         margin-bottom: 20px;
+     }
+}
+
+
+// 交易部分
+
+section{
+     .trade{
+         .container{
+            .row{
+               div[data-trade="trade"]{
+                   height: 90px;
+                
+                   span.first{
+                       font-size: 22px;
+                   }
+                   span.second{
+                    font-size: 15px;
+                   }
+                   a{
+                       color: rgb(80, 78, 78);
+                   }
+                   a:hover{
+                      color: rgb(252, 132, 132);
+                   }
+
+                }
+             }
+         }
+     }
+}
+
+// 预约
+section{
+     .appointment{
+         border-bottom: 1px solid grey;
+         border-top: 1px solid grey;
+         font-size: 14px;
+         .container{
+             .row{
+                .appointment-1{
+                    height: 60px;
+                    text-align: center;
+                    line-height:60px ;
+                    i{
+                        font-size: 15px;
+                    }
+                  .number{
+                        color: red;
+                        font-style: italic;
+                  }   
+                  .goal{
+                     color: rgb(117, 109, 109);
+                  }
+                  .goal:hover{
+                    color: red;
+                  }
+                  .immediate{
+                        color: red;
+                        font-style: italic;
+                        box-sizing: border-box;
+                        border-bottom: 1px dotted red;
+                  }
+                }
+                .appointment-2{
+                    height: 60px;
+                    text-align: center;
+                    line-height:60px ;
+                    a:hover{
+                        color: red;     
+                    }
+                }    
+
+             }
+         }
+     }
+}
+
+// 产品部分
+section{
+     .product{
+        background-color:rgb(221, 216, 216);
+         .container{
+            //  上部分
+             .nav-connect-bar{
+                 background-color:rgb(179, 166, 166);
+                 display: flex;
+                 align-items: center;
+                //  height: 40px;
+                //    控制不要换行
+                white-space: nowrap;
+                overflow-x: auto;
+                // overflow-x:auto;
+                    li{ 
+                        // height: 40px;
+                        // background-color: yellow;
+                        display: inline-block;
+                        a{
+                            color: rgb(97, 93, 93);
+                        }
+                     &:hover{
+                         border-bottom: 2px solid red;
+                         box-sizing: border-box;
+                      }
+                    }
+             }
+            //  下部分
+            .row{
+                div[data-product="product"]{
+                    background-color:rgb(221, 216, 216);
+                    .content{
+                        height: 210px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                         .left{
+                            background-color: red; 
+                             width: 70%;
+                             height: 100%;
+                             color: white;
+                             position: relative;
+                            .experience{
+                                width: 31px;
+                                height: 13px;
+                                background-color: white;
+                                color: red;
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                left: -8px;
+                                top: 0px;
+                                font-size: 12px;
+                                transform: rotate(-54deg);
+                            }
+                             h4{
+                                 text-align: center;
+                             }
+                             div[data-content="content1"]{
+                               
+                                position: relative;
+                                span,i{
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        position: absolute;
+                                        left: 0px;
+                                    }
+                             }
+                             div[data-content="content2"]{
+                                    span{
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        float: right;
+                                        } 
+                                    i{
+                                         display: block;
+                                         float: right;
+                                    }
+                            }  
+                         }
+                         .last{
+                                margin-top: 25px;
+                         }
+                         .right{
+                               display: inline-block;
+                                width: 30%;
+                                height: 100%;
+                                background-color: red;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-left: 1px dashed rgb(110, 102, 102);
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    width: 30px;
+                                    height: 30px;
+                                    background-color:rgb(221, 216, 216);
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    left: -17px;
+                                    top: -14px;
+                                }
+                                &::after{
+                                    content: "";
+                                    width: 30px;
+                                    height: 30px;
+                                    background-color:rgb(221, 216, 216);
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    bottom:-14px;
+                                    left: -17px;
+                                }
+                                p.top{
+                                    position: absolute;
+                                    top: 29px;
+                                    left: 2px;
+                                    height: 24px;
+                                    width: 84px;
+                                     span.fisrt{
+                                        border: 2px solid greenyellow;
+                                        color: greenyellow;
+                                        margin-left: 20px;
+                                     }
+                                     span.last{
+                                        border: 2px solid green;
+                                        color: green;
+                                        
+                                     }
+                                }
+                                p.btn{
+                                   span{
+                                    color: white;
+                                   }
+                                   span.first{
+                                      font-size: 60px;
+                                      i{
+                                          font-size: 20px;
+                                      }
+                                    }  
+
+                                }
+
+                         }
+                    }
+                }
+         }
+         }
+     }
+}
+// 新闻部分
+section{
+    .news{
+        .container{
+          .news-1{
+              height: 70px;
+              text-align: center;
+              .bottom-style{
+                    width: 100%;
+                    height: 3px;
+                    background-color: rgb(240, 217, 217);
+                   border-radius: 60px;
+                   position: relative;
+                   &::after{
+                       content: "";
+                       width:15px;
+                       height: 15px;
+                       border-radius: 50%;
+                       background-color: rgb(240, 217, 217);
+                       position: absolute;
+                       right: 0px;
+                       bottom: -5px;
+                    }
+              }
+            }  
+            .news-2{
+                display: flex;
+                justify-content: center;
+                i:before{
+                     font-size: 20px;
+                }
+                 a{
+                     color:whitesmoke;
+                     border-radius: 50%;
+                     background-color: gray;
+                     i{   
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         border-radius: 50%;
+                     }
+                     &.active{
+                        background-color: red;
+                     }
+                     &:hover{
+                         background-color: red;
+                     }
+
+
+                 }
+                .dash{
+                    width: 1px;
+                     height: 65px;
+                     border: 1px dashed rgb(55, 0, 255);
+                 }
+            }   
+            .row .my-news{
+                .container .row .news-3 .tab-content .tab-pane ul>li a{
+                   color: gray
+                }
+                .container .row .news-3 .tab-content .tab-pane ul>li span{
+                        float: left;       
+                } 
+
+            }
+        }
+    } 
+}
+
+// 结尾部分
+footer{
+    .parent{
+        text-align:center ;
+        background-color: gray;
+        .container{
+            .row{
+                .parent-2{
+                    .row{
+                        .content>div.img{
+                              height: 130px;
+                              text-align: center;
+                              line-height: 130px;
+                            span{
+                                 width: 100%;
+                                 height: 100%;
+                                 display: block;
+                                 &:before{
+                                     font-size: 100px;
+                                 }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/cssbootstrap4.3.1.min.css">
+    <script src="../libs/jquery3.2.1.min.js"></script>
+    <script src="../libs/popper1.15.0.min.js"></script>
+    <script src="../libs/bootstrap4.3.1.min.js"></script>
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+   
+    @media only screen and (min-width: 998px) and (max-width: 3000px){
+          .news-link{
+                width: 100%;
+          }
+   }
+   .news-2{
+       display: flex;
+       justify-content: center;
+   }
+
+
+</style>
+</head>
+<body>
+
+<section>
+        <div class="news">
+             <div class="container">
+                 <div class="row">
+                        <div class="col-12 col-lg-3">全部新闻</div>
+                        <div class="col-12 col-lg-9">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-2">                                           
+                                                        <div class="nav news-2 nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background: red;">
+                                                                <a class="nav-link news-link active"   id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                                </a>
+                                                                <div class="dash" style="width: 3px; height: 60px;background-color: rgb(0, 255, 213);"></div>
+                                                                <a class="nav-link news-link"   id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                                </a>
+                                                                <div class="dash" style="width: 3px; height: 60px;background-color: rgb(0, 255, 213);"></div>
+                                                                <a class="nav-link news-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                                </a>
+                                                                <div class="dash" style="width: 3px; height: 60px;background-color: rgb(0, 255, 213);"></div>
+                                                                <a class="nav-link news-link"   id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                                </a>
+                                                             
+                                                      </div>                                      
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                          <div class="tab-content" id="v-pills-tabContent" style="background: yellow;">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                        </div>
+                 </div>
+             </div>
+        </div>
+</section>
+
+
+
+
+
+    
+</body>
+</html>
